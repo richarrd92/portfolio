@@ -37,7 +37,7 @@ library.add(
 
 const About = () => {
   return (
-    <motion.About
+    <motion.about
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
@@ -92,8 +92,8 @@ const About = () => {
             I'm Richard Maliyetu, a senior Computer Science student at UMBC,
             graduating in May 2025 with a current GPA of 3.8. I've been
             recognized on the Dean’s List three times and completed rigorous
-            coursework in Object-Oriented Programming, Data Structures, Design
-            & Analysis of Algorithms, Software Engineering, Database management
+            coursework in Object-Oriented Programming, Data Structures, Design &
+            Analysis of Algorithms, Software Engineering, Database management
             Systems and Artificial Intelligence. Each project and challenge has
             strengthened my passion for applying these skills in real-world
             settings and continuing to grow in the dynamic tech industry.
@@ -169,7 +169,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </motion.About>
+    </motion.about>
   );
 };
 
