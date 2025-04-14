@@ -51,7 +51,6 @@ return (
           label="Projects"
           className="folder-icon"
         />
-        {/* You can add more icons like Contact or Resume later */}
       </div>
     </div>
   </motion.header>

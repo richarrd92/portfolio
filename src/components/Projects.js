@@ -75,7 +75,7 @@ function ProjectCard({ project }) {
       setCurrentImageIndex(
         (prevIndex) => (prevIndex + 1) % project.images.length
       );
-    }, 2000);
+    }, 2500); // Change image every 2.5 seconds
     return () => clearInterval(interval);
   }, [project.images.length]);
 
