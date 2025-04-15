@@ -8,7 +8,7 @@ import "../App.css";
 const recentProjects = [
   {
     id: 1,
-    title: "Inventory Manager",
+    title: "Inventory Manager (in progress)",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
     images: [
       "/inventory-app/image1.png",
@@ -31,8 +31,7 @@ const recentProjects = [
       "/edit-app/image3.png",
       "/edit-app/image4.png",
     ],
-    github:
-      "https://github.com/richarrd92/self-learning/tree/main/projects/edit-app",
+    github: "https://github.com/richarrd92/editor-app",
     live: "#",
   },
   {
@@ -46,8 +45,7 @@ const recentProjects = [
       "/note-app/image4.png",
       "/note-app/image5.png",
     ],
-    github:
-      "https://github.com/richarrd92/self-learning/tree/main/projects/note-app",
+    github: "https://github.com/richarrd92/note-app",
     live: "#",
   },
   {
@@ -60,8 +58,7 @@ const recentProjects = [
       "/path-finder-app/image3.png",
       "/path-finder-app/image4.png",
     ],
-    github:
-      "https://github.com/richarrd92/self-learning/tree/main/projects/search-algorithms",
+    github: "https://github.com/richarrd92/pathFinder-app",
     live: "#",
   },
 ];
@@ -91,7 +88,7 @@ function ProjectCard({ project }) {
       <div className="links">
         <a
           href={project.github}
-          target="_blank"
+          // target="_blank"
           rel="noopener noreferrer"
           title="GitHub"
           className="github-icon"
@@ -103,8 +100,7 @@ function ProjectCard({ project }) {
           target="_blank"
           rel="noopener noreferrer"
           title="Live Demo"
-          className="live-demo"
-          style={{ cursor: "not-allowed" }}
+          className={`live-demo ${project.id === 1 ? "disabled" : ""}`}
         >
           Live Demo
         </a>
@@ -122,9 +118,9 @@ function Projects() {
       className="projects"
     >
         <div className="projects-content">
-          <h2>Recent Projects</h2>
+          <h2>Projects</h2>
           <p>
-            Here are some of the projects I’ve worked on. Feel free to explore
+            Recent projects I've worked on. Feel free to explore
             and check out the live demos and source code.
           </p>
 
