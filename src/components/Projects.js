@@ -46,7 +46,7 @@ const recentProjects = [
       "/note-app/image5.png",
     ],
     github: "https://github.com/richarrd92/note-app",
-    live: "#",
+    live: "https://note-app-ashy-nine.vercel.app/",
   },
   {
     id: 4,
@@ -100,7 +100,7 @@ function ProjectCard({ project }) {
           target="_blank"
           rel="noopener noreferrer"
           title="Live Demo"
-          className={`live-demo ${project.id === 1 ? "disabled" : ""}`}
+          className={`live-demo ${project.id === 1 || project.id === 2 || project.id === 4 ? "disabled" : ""}`}
         >
           Live Demo
         </a>
