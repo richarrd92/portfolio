@@ -8,7 +8,7 @@ import "../App.css";
 const recentProjects = [
   {
     id: 1,
-    title: "Inventory Manager (in progress)",
+    title: "UMBC Inventory Manager",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
     images: [
       "/inventory-app/image1.png",
@@ -93,9 +93,9 @@ function ProjectCard({ project }) {
           title="GitHub"
           className="github-icon"
         >
-          <FaGithub />
+          <FaGithub style={{ marginRight: "5px" }}/> {" "} GitHub Repo
         </a>
-        <a
+        {/* <a
           href={project.live}
           target="_blank"
           rel="noopener noreferrer"
@@ -103,7 +103,7 @@ function ProjectCard({ project }) {
           className={`live-demo ${project.id === 1 || project.id === 2 || project.id === 4 ? "disabled" : ""}`}
         >
           Live Demo
-        </a>
+        </a> */}
       </div>
     </div>
   );

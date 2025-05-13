@@ -42,7 +42,7 @@ return (
       <img src="/portrait.jpg" alt="Profile" className="profile-img" />
       <h1>Richard Maliyetu</h1>
       <p className="intro-text">
-        Software Engineer | Full-Stack Developer
+        Aspiring Software Engineer | Full-Stack Developer
       </p>
       <div className="folder-icons">
         <FolderIcon route="/about" label="About" className="folder-icon" />

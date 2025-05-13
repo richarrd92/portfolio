@@ -99,7 +99,7 @@ const About = () => {
           continuing to grow in the dynamic tech industry.
         </p>
         <p className="about-text">
-          I'm very passionate about full-stack web development and software engineering. I enjoy building secure,
+          I'm very passionate about software engineering and full-stack development. I enjoy building secure,
           scalable applications with tools like React, FastAPI, and MariaDB. I'm
           currently working on the UMBC Retriever Essentials web application as
           part of a Software Engineering course group project; an initiative
@@ -111,13 +111,12 @@ const About = () => {
           I'm excited to contribute to agile teams, embrace modern version
           control with Git, and quickly adapt to new technologies. Whether
           developing backend APIs, implementing clean UIs, or tackling
-          algorithmic challenges, I bring energy, creativity, and a strong
+          algorithmic challenges, I bring a passion for problem-solving, creativity, and a strong
           commitment to writing efficient, maintainable code.
         </p>
         <p className="about-text">
           Outside of tech, I enjoy staying active and connected with friends whether it’s playing soccer, hopping into a game of FIFA, or hitting
-          the gym for a good workout session. These hobbies keep me balanced,
-          energized, and ready to tackle whatever challenges come my way.
+          the gym for a good workout session. Also a die hard football club Barcelona fan
         </p>
         <div className="skills-section">
           <h3 className="skills-title">Technical Skills</h3>
