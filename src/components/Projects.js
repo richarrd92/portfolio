@@ -8,7 +8,7 @@ import "../App.css";
 const recentProjects = [
   {
     id: 1,
-    title: "UMBC Inventory Manager",
+    title: "Inventory Manager",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
     images: [
       "/inventory-app/image1.png",
@@ -23,7 +23,7 @@ const recentProjects = [
   },
   {
     id: 2,
-    title: "Content Studio",
+    title: "Editor",
     technologies: "Next.js, Prisma, NeonDB, Cloudinary, Clerk, Daisy UI",
     images: [
       "/edit-app/image1.png",
@@ -36,7 +36,7 @@ const recentProjects = [
   },
   {
     id: 3,
-    title: "Notes",
+    title: "Note",
     technologies: "TypeScript, Appwrite, React, Tailwind CSS",
     images: [
       "/note-app/image1.png",
@@ -50,7 +50,7 @@ const recentProjects = [
   },
   {
     id: 4,
-    title: "AlgoPath Finder",
+    title: "Path Finder",
     technologies: "TypeScript, React, Next.js, Tailwind CSS",
     images: [
       "/path-finder-app/image1.png",
@@ -72,7 +72,7 @@ function ProjectCard({ project }) {
       setCurrentImageIndex(
         (prevIndex) => (prevIndex + 1) % project.images.length
       );
-    }, 2500); // Change image every 2.5 seconds
+    }, 3000); // Change image every 3 seconds
     return () => clearInterval(interval);
   }, [project.images.length]);
 
@@ -93,7 +93,7 @@ function ProjectCard({ project }) {
           title="GitHub"
           className="github-icon"
         >
-          <FaGithub style={{ marginRight: "5px" }}/> {" "} GitHub Repo
+          <FaGithub style={{ marginRight: "5px" }}/> {" "} GitHub
         </a>
         {/* <a
           href={project.live}
@@ -118,7 +118,7 @@ function Projects() {
       className="projects"
     >
         <div className="projects-content">
-          <h2>Projects</h2>
+          <h2 className="title">Projects</h2>
           <p>
             Recent projects I've worked on. Feel free to explore
             and check out the live demos and source code.

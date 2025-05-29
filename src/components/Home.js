@@ -40,7 +40,7 @@ return (
   >
     <div className="header-content">
       <img src="/portrait.jpg" alt="Profile" className="profile-img" />
-      <h1>Richard Maliyetu</h1>
+      <h1 className="name">Richard Maliyetu</h1>
       <p className="intro-text">
         Aspiring Software Engineer | Full-Stack Developer
       </p>

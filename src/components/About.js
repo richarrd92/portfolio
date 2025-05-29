@@ -10,6 +10,7 @@ import {
   faPython,
   faLinkedin,
   faGithub,
+  faJava,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faDatabase,
@@ -27,6 +28,7 @@ library.add(
   faReact,
   faDatabase,
   faPython,
+  faJava,
   faLinkedin,
   faGithub,
   faCode,
@@ -47,7 +49,7 @@ const About = () => {
       <h2 className="about-title">About</h2>
       <div className="about-links">
         {" "}
-        <div className="cv-download">
+        {/* <div className="cv-download">
           <a href="/Resume.pdf" download="Resume" className="download-button">
             <FontAwesomeIcon
               icon={["fas", "file-lines"]}
@@ -55,8 +57,13 @@ const About = () => {
             />
             Resume
           </a>
-        </div>
+        </div> */}
         <div className="social-links">
+          <a href="/Resume.pdf" download="Resume" className="social-icon" title="Download my resume">
+            <FontAwesomeIcon
+              icon={["fas", "file-lines"]}
+            />
+          </a>
           <a
             href="mailto:richardmaliyetu@gmail.com"
             className="social-icon"
@@ -89,34 +96,33 @@ const About = () => {
       <div className="about-content">
         {" "}
         <p className="about-text">
-          I'm Richard Maliyetu, a senior Computer Science student at UMBC,
-          graduating in May 2025 with a current GPA of 3.8. I've been recognized
-          on the Dean’s List three times and completed rigorous coursework in
-          Object-Oriented Programming, Data Structures, Design & Analysis of
-          Algorithms, Software Engineering, Database Management Systems, and
-          Artificial Intelligence. Each project and challenge has strengthened
-          my passion for applying these skills in real-world settings and
-          continuing to grow in the dynamic tech industry.
+          I'm Richard Maliyetu, a recent Computer Science graduate from UMBC
+          with a GPA of 3.6. During my academic journey, I completed hands-on
+          coursework in Object-Oriented Programming, Data Structures,
+          Algorithms, Software Engineering, Database Systems, Operating Systems,
+          and Artificial Intelligence. These experiences fueled my passion for
+          solving real-world problems through thoughtful, functional software.
         </p>
         <p className="about-text">
-          I'm very passionate about software engineering and full-stack development. I enjoy building secure,
-          scalable applications with tools like React, FastAPI, and MariaDB. I'm
-          currently working on the UMBC Retriever Essentials web application as
-          part of a Software Engineering course group project; an initiative
-          aimed at streamlining the management and distribution of food and
-          essential items to students in need. I find real purpose in solving
-          meaningful problems through thoughtful, functional code.
+          I specialize in full-stack development and enjoy building secure,
+          scalable applications with technologies like React, FastAPI, and
+          MariaDB. One of my recent projects involved leading the development of
+          the UMBC Essentials Inventory App, a web platform designed to help
+          manage and distribute food and essential items to students in need.
+          This work combined technical problem-solving with real social impact,
+          which motivates me in every project I take on.
         </p>
         <p className="about-text">
-          I'm excited to contribute to agile teams, embrace modern version
-          control with Git, and quickly adapt to new technologies. Whether
-          developing backend APIs, implementing clean UIs, or tackling
-          algorithmic challenges, I bring a passion for problem-solving, creativity, and a strong
-          commitment to writing efficient, maintainable code.
+          I thrive in Agile environments and am proficient with Git-based
+          version control, Linux systems, and modern development stacks. Whether
+          I'm designing backend APIs, crafting responsive UIs with Tailwind CSS,
+          or tackling algorithmic challenges, I bring a mindset focused on
+          scalability, maintainability, and clean code.
         </p>
         <p className="about-text">
-          Outside of tech, I enjoy staying active and connected with friends whether it’s playing soccer, hopping into a game of FIFA, or hitting
-          the gym for a good workout session. Also a die hard football club Barcelona fan
+          Outside of tech, I stay active through soccer, workouts, and FIFA
+          matches with friends. I'm also a die-hard FC Barcelona fan, visiting
+          Camp Nou is definitely on my bucket list.
         </p>
         <div className="skills-section">
           <h3 className="skills-title">Technical Skills</h3>
@@ -127,6 +133,10 @@ const About = () => {
                 className="skill-icon"
               />
               <p className="skill-text">Python</p>
+            </div>
+            <div className="skill-item">
+              <FontAwesomeIcon icon={["fab", "java"]} className="skill-icon" />
+              <p className="skill-text">Java</p>
             </div>
             <div className="skill-item">
               <FontAwesomeIcon icon={["fas", "code"]} className="skill-icon" />
