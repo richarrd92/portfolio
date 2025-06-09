@@ -8,7 +8,7 @@ import "../App.css";
 const recentProjects = [
   {
     id: 1,
-    title: "Inventory Manager",
+    title: "UMBC Essentials Inventory App ",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
     images: [
       "/inventory-app/image1.png",
@@ -23,7 +23,7 @@ const recentProjects = [
   },
   {
     id: 2,
-    title: "Editor",
+    title: "Editor App (SaaS)",
     technologies: "Next.js, Prisma, NeonDB, Cloudinary, Clerk, Daisy UI",
     images: [
       "/edit-app/image1.png",
@@ -36,7 +36,7 @@ const recentProjects = [
   },
   {
     id: 3,
-    title: "Note",
+    title: "Note App",
     technologies: "TypeScript, Appwrite, React, Tailwind CSS",
     images: [
       "/note-app/image1.png",
@@ -46,11 +46,11 @@ const recentProjects = [
       "/note-app/image5.png",
     ],
     github: "https://github.com/richarrd92/note-app",
-    live: "https://note-app-ashy-nine.vercel.app/",
+    live: "#",
   },
   {
     id: 4,
-    title: "Path Finder",
+    title: "Algorithm Visualizer - Path Finder",
     technologies: "TypeScript, React, Next.js, Tailwind CSS",
     images: [
       "/path-finder-app/image1.png",
@@ -119,9 +119,9 @@ function Projects() {
     >
         <div className="projects-content">
           <h2 className="title">Projects</h2>
-          <p>
+          <p className="description">
             Recent projects I've worked on. Feel free to explore
-            and check out the live demos and source code.
+            and check out the source code on GitHub.
           </p>
 
           {/* Project Cards Grid */}

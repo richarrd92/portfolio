@@ -10,7 +10,7 @@ function Home() {
 
   const handleClick = (route) => {
     setOpenFolders((prev) => ({ ...prev, [route]: true }));
-    setTimeout(() => navigate(route), 200); 
+    setTimeout(() => navigate(route), 200);
   };
 
   const FolderIcon = ({ route, label }) => {
@@ -31,30 +31,30 @@ function Home() {
     );
   };
 
-return (
-  <motion.header
-    initial={{ opacity: 0, y: -30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7, ease: "easeOut" }}
-    className="header"
-  >
-    <div className="header-content">
-      <img src="/portrait.jpg" alt="Profile" className="profile-img" />
-      <h1 className="name">Richard Maliyetu</h1>
-      <p className="intro-text">
-        Aspiring Software Engineer | Full-Stack Developer
-      </p>
-      <div className="folder-icons">
-        <FolderIcon route="/about" label="About" className="folder-icon" />
-        <FolderIcon
-          route="/projects"
-          label="Projects"
-          className="folder-icon"
-        />
+  return (
+    <motion.header
+      initial={{ opacity: 0, y: -30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="header"
+    >
+      <div className="header-content">
+        <img src="/portrait.jpg" alt="Profile" className="profile-img" />
+        <h1 className="name">Richard Maliyetu</h1>
+        <p className="intro-text">
+          Aspiring Software Engineer | Full-Stack Developer
+        </p>
+        <div className="folder-icons">
+          <FolderIcon route="/about" label="About" className="folder-icon" />
+          <FolderIcon
+            route="/projects"
+            label="Projects"
+            className="folder-icon"
+          />
+        </div>
       </div>
-    </div>
-  </motion.header>
-);
+    </motion.header>
+  );
 }
 
 export default Home;

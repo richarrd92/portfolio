@@ -59,10 +59,13 @@ const About = () => {
           </a>
         </div> */}
         <div className="social-links">
-          <a href="/Resume.pdf" download="Resume" className="social-icon" title="Download my resume">
-            <FontAwesomeIcon
-              icon={["fas", "file-lines"]}
-            />
+          <a
+            href="/Resume.pdf"
+            download="Resume"
+            className="social-icon"
+            title="Download my resume"
+          >
+            <FontAwesomeIcon icon={["fas", "file-lines"]} />
           </a>
           <a
             href="mailto:richardmaliyetu@gmail.com"
@@ -96,33 +99,36 @@ const About = () => {
       <div className="about-content">
         {" "}
         <p className="about-text">
-          I'm Richard Maliyetu, a recent Computer Science graduate from UMBC
-          with a GPA of 3.6. During my academic journey, I completed hands-on
-          coursework in Object-Oriented Programming, Data Structures,
-          Algorithms, Software Engineering, Database Systems, Operating Systems,
-          and Artificial Intelligence. These experiences fueled my passion for
-          solving real-world problems through thoughtful, functional software.
+          I’m Richard Maliyetu, a recent Computer Science graduate from
+          UMBC (GPA 3.6) with a strong foundation in software engineering,
+          system design, and cybersecurity. My academic journey included
+          hands-on coursework in data structures, algorithms, operating systems,
+          databases, and AI, along with security-focused certifications such as
+          the Google Cybersecurity Certificate and CompTIA Security+ (in
+          progress).
         </p>
         <p className="about-text">
-          I specialize in full-stack development and enjoy building secure,
-          scalable applications with technologies like React, FastAPI, and
-          MariaDB. One of my recent projects involved leading the development of
-          the UMBC Essentials Inventory App, a web platform designed to help
-          manage and distribute food and essential items to students in need.
-          This work combined technical problem-solving with real social impact,
-          which motivates me in every project I take on.
+          I specialize in full-stack development with a focus on building
+          secure, scalable applications using technologies like React, FastAPI,
+          and MariaDB. One of my most meaningful projects was leading the
+          development of the UMBC Essentials Inventory App; a web platform that
+          helps distribute food and essentials to students in need. It combined
+          technical problem-solving with tangible community impact, which is
+          exactly the kind of work I’m passionate about.
         </p>
         <p className="about-text">
-          I thrive in Agile environments and am proficient with Git-based
-          version control, Linux systems, and modern development stacks. Whether
-          I'm designing backend APIs, crafting responsive UIs with Tailwind CSS,
-          or tackling algorithmic challenges, I bring a mindset focused on
-          scalability, maintainability, and clean code.
+          I thrive in Agile environments, have experience with Git version
+          control, and work comfortably in Linux-based development. Whether I’m
+          securing backend APIs, designing responsive UIs, or digging into
+          low-level system behaviors, I bring a focus on maintainability,
+          performance, and clean code. I’m also increasingly interested in
+          cybersecurity particularly in areas like secure coding, access
+          control, and vulnerability prevention.
         </p>
         <p className="about-text">
-          Outside of tech, I stay active through soccer, workouts, and FIFA
-          matches with friends. I'm also a die-hard FC Barcelona fan, visiting
-          Camp Nou is definitely on my bucket list.
+          Outside of tech, I stay active through soccer, gym workouts, and to
+          relax i enjoy playing FIFA matches with friends. I’m a lifelong FC
+          Barcelona fan, and visiting Camp Nou is definitely on my bucket list.
         </p>
         <div className="skills-section">
           <h3 className="skills-title">Technical Skills</h3>
