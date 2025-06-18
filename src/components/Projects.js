@@ -16,7 +16,6 @@ const recentProjects = [
       "/inventory-app/image3.png",
       "/inventory-app/image4.png",
       "/inventory-app/image5.png",
-      "/inventory-app/image6.png",
     ],
     github: "https://github.com/richarrd92/umbc-inventory-app",
     live: "#",
@@ -36,6 +35,19 @@ const recentProjects = [
   },
   {
     id: 3,
+    title: "Algorithm Visualizer - Path Finder",
+    technologies: "TypeScript, React, Next.js, Tailwind CSS",
+    images: [
+      "/path-finder-app/image1.png",
+      "/path-finder-app/image2.png",
+      "/path-finder-app/image3.png",
+      "/path-finder-app/image4.png",
+    ],
+    github: "https://github.com/richarrd92/pathFinder-app",
+    live: "#",
+  },
+  {
+    id: 4,
     title: "Note App",
     technologies: "TypeScript, Appwrite, React, Tailwind CSS",
     images: [
@@ -49,16 +61,57 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 4,
-    title: "Algorithm Visualizer - Path Finder",
-    technologies: "TypeScript, React, Next.js, Tailwind CSS",
+    id: 5,
+    title: "Tic-tac-toe App",
+    technologies: "React, HTML, CSS, JS",
     images: [
-      "/path-finder-app/image1.png",
-      "/path-finder-app/image2.png",
-      "/path-finder-app/image3.png",
-      "/path-finder-app/image4.png",
+      "/tic-tac-toe-app/image1.png",
+      "/tic-tac-toe-app/image2.png",
+      "/tic-tac-toe-app/image3.png",
     ],
-    github: "https://github.com/richarrd92/pathFinder-app",
+    github:
+      "https://github.com/richarrd92/self-learning/tree/main/react/tic-tac-toe",
+    live: "#",
+  },
+  {
+    id: 6,
+    title: "Calculator App",
+    technologies: "JavaScript, HTML, CSS",
+    images: [
+      "/calculator-app/image1.png",
+      "/calculator-app/image2.png",
+      "/calculator-app/image3.png",
+    ],
+    github:
+      "https://github.com/richarrd92/self-learning/tree/main/javascript/simple-calculator",
+    live: "#",
+  },
+
+  {
+    id: 7,
+    title: "Currency Converter App",
+    technologies: "React, Tailwind CSS, RESTFul API",
+    images: [
+      "/currency-converter-app/image1.png",
+      "/currency-converter-app/image2.png",
+    ],
+    github:
+      "https://github.com/richarrd92/self-learning/tree/main/react/currencyconverter",
+    live: "#",
+  },
+
+  {
+    id: 8,
+    title: "Password Generator App",
+    technologies: "React, Tailwind CSS",
+    images: [
+      "/password-generator-app/image1.png",
+      "/password-generator-app/image2.png",
+      "/password-generator-app/image3.png",
+      "/password-generator-app/image4.png",
+    ],
+    github:
+      "https://github.com/richarrd92/self-learning/tree/main/react/passwordgenerator",
     live: "#",
   },
 ];
@@ -93,7 +146,7 @@ function ProjectCard({ project }) {
           title="GitHub"
           className="github-icon"
         >
-          <FaGithub style={{ marginRight: "5px" }}/> {" "} GitHub
+          <FaGithub style={{ marginRight: "5px" }} /> GitHub
         </a>
         {/* <a
           href={project.live}
@@ -117,20 +170,20 @@ function Projects() {
       transition={{ duration: 0.7, ease: "easeOut" }}
       className="projects"
     >
-        <div className="projects-content">
-          <h2 className="title">Projects</h2>
-          <p className="description">
-            Recent projects I've worked on. Feel free to explore
-            and check out the source code on GitHub.
-          </p>
+      <div className="projects-content">
+        <h2 className="title">Projects</h2>
+        <p className="description">
+          Projects I've worked on. Feel free to explore and check out the
+          source code on GitHub.
+        </p>
 
-          {/* Project Cards Grid */}
-          <div className="project-cards">
-            {recentProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
-            ))}
-          </div>
+        {/* Project Cards Grid */}
+        <div className="project-cards">
+          {recentProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
         </div>
+      </div>
     </motion.project>
   );
 }
