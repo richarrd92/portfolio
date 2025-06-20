@@ -6,9 +6,21 @@ import "../App.css";
 
 // recent projects
 const recentProjects = [
-  {
+    {
     id: 1,
-    title: "UMBC Essentials Inventory App ",
+    title: "HobbyMatch App",
+    technologies: "React, HTML, CSS, Python, Firebase, PostgreSQL",
+    images: [
+      "/hobbymatch-app/image1.png",
+      "/hobbymatch-app/image2.png",
+      "/hobbymatch-app/image3.png",
+    ],
+    github: "https://github.com/richarrd92/hobbymatch-app",
+    live: "#",
+  },
+  {
+    id: 2,
+    title: "UMBC Essentials Inventory App",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
     images: [
       "/inventory-app/image1.png",
@@ -21,7 +33,7 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 2,
+    id: 3,
     title: "Editor App (SaaS)",
     technologies: "Next.js, Prisma, NeonDB, Cloudinary, Clerk, Daisy UI",
     images: [
@@ -34,7 +46,7 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 3,
+    id: 4,
     title: "Algorithm Visualizer - Path Finder",
     technologies: "TypeScript, React, Next.js, Tailwind CSS",
     images: [
@@ -47,7 +59,7 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 4,
+    id: 5,
     title: "Note App",
     technologies: "TypeScript, Appwrite, React, Tailwind CSS",
     images: [
@@ -61,7 +73,7 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 5,
+    id: 6,
     title: "Tic-tac-toe App",
     technologies: "React, HTML, CSS, JS",
     images: [
@@ -74,7 +86,7 @@ const recentProjects = [
     live: "#",
   },
   {
-    id: 6,
+    id: 7,
     title: "Calculator App",
     technologies: "JavaScript, HTML, CSS",
     images: [
@@ -88,7 +100,7 @@ const recentProjects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Currency Converter App",
     technologies: "React, Tailwind CSS, RESTFul API",
     images: [
@@ -101,7 +113,7 @@ const recentProjects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Password Generator App",
     technologies: "React, Tailwind CSS",
     images: [
