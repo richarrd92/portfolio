@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -6,29 +5,19 @@ import "../App.css";
 
 // recent projects
 const recentProjects = [
-    {
+  {
     id: 1,
-    title: "HobbyMatch App",
+    title: "HobbyMatch (Ongoing Development)",
     technologies: "React, HTML, CSS, Python, Firebase, PostgreSQL",
-    images: [
-      "/hobbymatch-app/image1.png",
-      "/hobbymatch-app/image2.png",
-      "/hobbymatch-app/image3.png",
-    ],
-    github: "https://github.com/richarrd92/hobbymatch-app",
+    image: "/hobbymatch-app/image1.png",
+    github: "https://github.com/richarrd92/hobbymatch",
     live: "#",
   },
   {
     id: 2,
     title: "UMBC Essentials Inventory App",
     technologies: "React, HTML, CSS, Python, Firebase, MariaDB",
-    images: [
-      "/inventory-app/image1.png",
-      "/inventory-app/image2.png",
-      "/inventory-app/image3.png",
-      "/inventory-app/image4.png",
-      "/inventory-app/image5.png",
-    ],
+    image: "/inventory-app/image1.png",
     github: "https://github.com/richarrd92/umbc-inventory-app",
     live: "#",
   },
@@ -36,12 +25,7 @@ const recentProjects = [
     id: 3,
     title: "Editor App (SaaS)",
     technologies: "Next.js, Prisma, NeonDB, Cloudinary, Clerk, Daisy UI",
-    images: [
-      "/edit-app/image1.png",
-      "/edit-app/image2.png",
-      "/edit-app/image3.png",
-      "/edit-app/image4.png",
-    ],
+    image: "/edit-app/image1.png",
     github: "https://github.com/richarrd92/editor-app",
     live: "#",
   },
@@ -49,12 +33,7 @@ const recentProjects = [
     id: 4,
     title: "Algorithm Visualizer - Path Finder",
     technologies: "TypeScript, React, Next.js, Tailwind CSS",
-    images: [
-      "/path-finder-app/image1.png",
-      "/path-finder-app/image2.png",
-      "/path-finder-app/image3.png",
-      "/path-finder-app/image4.png",
-    ],
+    image: "/path-finder-app/image1.png",
     github: "https://github.com/richarrd92/pathFinder-app",
     live: "#",
   },
@@ -62,13 +41,7 @@ const recentProjects = [
     id: 5,
     title: "Note App",
     technologies: "TypeScript, Appwrite, React, Tailwind CSS",
-    images: [
-      "/note-app/image1.png",
-      "/note-app/image2.png",
-      "/note-app/image3.png",
-      "/note-app/image4.png",
-      "/note-app/image5.png",
-    ],
+    image: "/note-app/image1.png",
     github: "https://github.com/richarrd92/note-app",
     live: "#",
   },
@@ -76,11 +49,7 @@ const recentProjects = [
     id: 6,
     title: "Tic-tac-toe App",
     technologies: "React, HTML, CSS, JS",
-    images: [
-      "/tic-tac-toe-app/image1.png",
-      "/tic-tac-toe-app/image2.png",
-      "/tic-tac-toe-app/image3.png",
-    ],
+    image: "/tic-tac-toe-app/image1.png",
     github:
       "https://github.com/richarrd92/self-learning/tree/main/react/tic-tac-toe",
     live: "#",
@@ -89,62 +58,37 @@ const recentProjects = [
     id: 7,
     title: "Calculator App",
     technologies: "JavaScript, HTML, CSS",
-    images: [
-      "/calculator-app/image1.png",
-      "/calculator-app/image2.png",
-      "/calculator-app/image3.png",
-    ],
+    image: "/calculator-app/image1.png",
     github:
       "https://github.com/richarrd92/self-learning/tree/main/javascript/simple-calculator",
     live: "#",
   },
-
   {
     id: 8,
     title: "Currency Converter App",
     technologies: "React, Tailwind CSS, RESTFul API",
-    images: [
-      "/currency-converter-app/image1.png",
-      "/currency-converter-app/image2.png",
-    ],
+    image: "/currency-converter-app/image1.png",
     github:
       "https://github.com/richarrd92/self-learning/tree/main/react/currencyconverter",
     live: "#",
   },
-
   {
     id: 9,
     title: "Password Generator App",
     technologies: "React, Tailwind CSS",
-    images: [
-      "/password-generator-app/image1.png",
-      "/password-generator-app/image2.png",
-      "/password-generator-app/image3.png",
-      "/password-generator-app/image4.png",
-    ],
+    image: "/password-generator-app/image1.png",
     github:
       "https://github.com/richarrd92/self-learning/tree/main/react/passwordgenerator",
     live: "#",
   },
 ];
 
-// project card
+// Project card component
 function ProjectCard({ project }) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex(
-        (prevIndex) => (prevIndex + 1) % project.images.length
-      );
-    }, 3000); // Change image every 3 seconds
-    return () => clearInterval(interval);
-  }, [project.images.length]);
-
   return (
     <div className="project-card">
       <img
-        src={project.images[currentImageIndex]}
+        src={project.image}
         alt={`${project.title} screenshot`}
         className="project-image"
       />
@@ -160,23 +104,15 @@ function ProjectCard({ project }) {
         >
           <FaGithub style={{ marginRight: "5px" }} /> GitHub
         </a>
-        {/* <a
-          href={project.live}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Live Demo"
-          className={`live-demo ${project.id === 1 || project.id === 2 || project.id === 4 ? "disabled" : ""}`}
-        >
-          Live Demo
-        </a> */}
       </div>
     </div>
   );
 }
 
+// Main Projects component
 function Projects() {
   return (
-    <motion.project
+    <motion.section
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
@@ -185,18 +121,17 @@ function Projects() {
       <div className="projects-content">
         <h2 className="title">Projects</h2>
         <p className="description">
-          Projects I've worked on. Feel free to explore and check out the
-          source code on GitHub.
+          Projects I've worked on. Feel free to explore and check out the source
+          code on GitHub.
         </p>
 
-        {/* Project Cards Grid */}
         <div className="project-cards">
           {recentProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>
-    </motion.project>
+    </motion.section>
   );
 }
 
