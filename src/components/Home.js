@@ -41,9 +41,7 @@ function Home() {
       <div className="header-content">
         <img src="/portrait.jpg" alt="Profile" className="profile-img" />
         <h1 className="name">Richard Maliyetu</h1>
-        <p className="intro-text">
-          Aspiring Software Engineer | Full-Stack Developer
-        </p>
+        <p className="intro-text">Software Engineer | Full-Stack Developer</p>
         <div className="folder-icons">
           <FolderIcon route="/about" label="About" className="folder-icon" />
           <FolderIcon

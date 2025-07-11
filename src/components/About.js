@@ -60,8 +60,8 @@ const About = () => {
         </div> */}
         <div className="social-links">
           <a
-            href="/Resume.pdf"
-            download="Resume"
+            href="/Richard_Maliyetu_Resume.pdf"
+            download="Richard_Maliyetu_Resume"
             className="social-icon"
             title="Download my resume"
           >
@@ -100,34 +100,44 @@ const About = () => {
         {" "}
         <p className="about-text">
           Hi, I’m Richard Maliyetu, a recent Computer Science graduate from UMBC
-          (GPA 3.6) with a solid foundation in full-stack development, systems
-          programming, and cybersecurity. My academic path covered hands-on
-          coursework in data structures, algorithms, operating systems,
-          databases, and AI, supported by practical certifications like the
-          Google Cybersecurity Certificate and CompTIA Security+ (in progress).
+          (GPA 3.6) with a strong background in C++, Linux systems programming,
+          and full-stack development. My technical foundation was built through
+          hands-on coursework in data structures, algorithms, operating systems,
+          and object-oriented design, and I’ve applied those skills through
+          personal projects, open-source work, and collaborative Agile teams.
         </p>
         <p className="about-text">
-          I specialize in building secure and scalable applications using tools
-          like React, FastAPI, and SQL-based databases (PostgreSQL/MariaDB). One
-          of my most rewarding projects was leading the development of the UMBC
-          Essentials Inventory App, a web platform that improved access to food
-          and essentials for students. The experience merged technical
-          problem-solving with meaningful community impact, which is the kind of
-          work that excites me most. In addition to full-stack web development,
-          I’ve worked with Firebase authentication, Docker, GitHub Actions, and
-          have experience deploying REST APIs and contributing to Agile teams. I
-          also enjoy exploring low-level systems and have developed Linux kernel
-          modules and C++ system-level applications to deepen my understanding
-          of how software runs under the hood.
+          I specialize in developing scalable, secure software using tools like
+          C++, Python, React, FastAPI, and PostgreSQL. I’ve worked extensively
+          in Linux environments, including building custom kernel modules and
+          debugging low-level process behavior with tools like GDB and Valgrind.
+          My systems-level work has sharpened my skills in memory management,
+          multithreading, and performance tuning and it’s where I thrive the
+          most.
         </p>
         <p className="about-text">
-          My growing interest in cybersecurity fuels my commitment to writing
-          secure code and building resilient systems. I'm particularly focused
-          on access control, vulnerability prevention, and clean code practices
-          that scale. Outside of tech, I stay active through soccer, gym
-          workouts, and to relax i enjoy playing FIFA matches with friends. I’m
-          a lifelong FC Barcelona fan, and visiting Camp Nou is definitely on my
-          bucket list.
+          Beyond systems programming, I enjoy full-stack application development
+          and recently led the development of the UMBC Essentials Inventory
+          platform, a student-focused tool that improved access to campus
+          resources. I’ve also built social platforms like HobbyMatch and SaaS
+          tools like an image/video Editor App, emphasizing secure
+          authentication, clean APIs, and responsive UI design.
+        </p>
+        <p className="about-text">
+          I’m currently pursuing a CompTIA Security+ certification and exploring
+          the intersection of software engineering and cybersecurity with a
+          focus on secure development, access control, and vulnerability
+          prevention. As a U.S. citizen eligible for DoD Secret Clearance, I’m
+          actively seeking full-time software engineering opportunities in
+          defense, systems-level development, or backend-focused roles where I
+          can build tools that make a real-world impact.
+        </p>
+        <p className="about-text">
+          Outside of tech, I stay active through soccer and gym workouts, and to
+          relax, I enjoy playing FIFA matches on playstation with friends. I’m a
+          lifelong FC Barcelona fan, and visiting Camp Nou is definitely on my
+          bucket list. Whether I’m solving bugs or collaborating on meaningful
+          software, I love learning, building, and growing with great teams.
         </p>
         <div className="skills-section">
           <h3 className="skills-title">Technical Skills</h3>
