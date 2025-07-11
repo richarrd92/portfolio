@@ -60,8 +60,8 @@ const About = () => {
         </div> */}
         <div className="social-links">
           <a
-            href="/Richard_Maliyetu_Resume.pdf"
-            download="Richard_Maliyetu_Resume"
+            href="/Resume.pdf"
+            download="Resume"
             className="social-icon"
             title="Download my resume"
           >
